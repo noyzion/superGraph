@@ -1,3 +1,5 @@
+
+#pragma once
 #include <iostream>
 #include <list>
 using namespace std;
@@ -12,7 +14,7 @@ public:
 	vertex(int value) : value(value) {
 		adjList.empty();
 	}
-	int getValue() { return value; }
+	int getValue() const { return value; }
 	list<int>& getAdjList() { return adjList; }
 	void setValue(int val) { value = val; }
 };
